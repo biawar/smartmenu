@@ -9,3 +9,5 @@ class Burguer {
         this.sizeOfBurguer = [smallerBurguer, biggerBurguer];
     }
 }
+
+export default Burguer;
