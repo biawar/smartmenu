@@ -6,7 +6,7 @@ import burguersReducer from './store/reducers/burguers';
 import CardapioNavigator from './navigation/CardapioNavigator';
 
 const rootReducer = combineReducers({
-  burguers: burguersReducer
+  burguer: burguersReducer
 });
 
 const store = createStore(rootReducer);
