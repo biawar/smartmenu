@@ -1,16 +1,15 @@
 import React from 'react';
-import { Text, View } from 'react-native';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 
-import burguerReducer from './store/reducers/burguer';
+import burguersReducer from './store/reducers/burguers';
 import CardapioNavigator from './navigation/CardapioNavigator';
 
 const rootReducer = combineReducers({
-  burguer: burguerReducer
+  burguers: burguersReducer
 });
 
-const store = createStore(rootReducer)
+const store = createStore(rootReducer);
 
 export default function App() {
   return (

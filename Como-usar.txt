@@ -1,3 +1,4 @@
-Como configurar:
+1) Para rodar o código:
+Va para a pasta raiz do projeto e execute:
 - npm install
 - npm start

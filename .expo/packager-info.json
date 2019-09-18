@@ -1,9 +1,9 @@
 {
-  "devToolsPort": 19002,
+  "devToolsPort": 19003,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 23704,
-  "expoServerNgrokUrl": "https://ba-uzh.giufalcao.smartmenu.exp.direct",
-  "packagerNgrokUrl": "https://packager.ba-uzh.giufalcao.smartmenu.exp.direct",
-  "ngrokPid": 23716
+  "packagerPort": 19004,
+  "packagerPid": 38789,
+  "expoServerNgrokUrl": "https://cj-sgp.giufalcao.smartmenu.exp.direct",
+  "packagerNgrokUrl": "https://packager.cj-sgp.giufalcao.smartmenu.exp.direct",
+  "ngrokPid": 38799
 }

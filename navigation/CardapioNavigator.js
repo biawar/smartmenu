@@ -1,19 +1,21 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { Platform } from 'react-native';
 
-import BurguerOverViewScreen from '../screens/cardapio/CardapioOverviewScreen';
+import ProductsOverviewScreen from '../screens/burgueria/CardapioOverviewScreen';
 import Colors from '../constants/Colors';
 
-const BurguerNavigator = createStackNavigator({
-    BurguerOverview: BurguerOverViewScreen
-}, {
+const ProductsNavigator = createStackNavigator(
+  {
+    ProductsOverview: ProductsOverviewScreen
+  },
+  {
     defaultNavigationOptions: {
-        headerStyle: {
-            background: Platform.OS == 'android' ? Colors.primary : ''
-        },
-        headerTintColor: Platform.OS == 'android' ? 'white' : Colors.primary
+      headerStyle: {
+        backgroundColor: Platform.OS === 'android' ? Colors.primary : ''
+      },
+      headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
     }
+  }
+);
 
-})
-
-export default createAppContainer(BurguerNavigator);
+export default createAppContainer(ProductsNavigator);
