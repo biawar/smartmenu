@@ -1,12 +1,12 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { Platform } from 'react-native';
 
-import ProductsOverviewScreen from '../screens/burgueria/CardapioOverviewScreen';
+import CardapioOverviewScreen from '../screens/cardapio/CardapioOverviewScreen';
 import Colors from '../constants/Colors';
 
-const ProductsNavigator = createStackNavigator(
+const CardapioNavigator = createStackNavigator(
   {
-    ProductsOverview: ProductsOverviewScreen
+    CardapioOverview: CardapioOverviewScreen
   },
   {
     defaultNavigationOptions: {
@@ -18,4 +18,4 @@ const ProductsNavigator = createStackNavigator(
   }
 );
 
-export default createAppContainer(ProductsNavigator);
+export default createAppContainer(CardapioNavigator);
