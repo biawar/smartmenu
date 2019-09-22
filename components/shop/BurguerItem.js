@@ -6,11 +6,12 @@ import Colors from '../../constants/Colors';
 const BurguerItem = props => {
   return (
     <View style={styles.burguer}>
-      <View style={styles.details}>
+      <View style={styles.headerContainer}>
         <Text style={styles.title}>{props.title}</Text>
         <Text style={styles.price}>${props.price.toFixed(2)}</Text>
       </View>
-      <View style={styles.imageContainer}>
+      <View style={styles.bodyContainer}>
+        <Text style={styles.description}>{props.description}</Text>
         <Image style={styles.image} source={{ uri: props.image }} />
       </View>
       <View style={styles.actions}>
@@ -36,43 +37,48 @@ const styles = StyleSheet.create({
     height: 300,
     margin: 20
   },
-  imageContainer: {
-    width: '100%',
-    height: '50%',
+  bodyContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: 330,
+    height: 150,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
     overflow: 'hidden'
   },
   image: {
-    width: '100%',
-    height: '100%'
-    
+    width: '50%',
+    height: '65%',
   },
-  details: {
+  headerContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    height: '25%',
-    paddingTop: 10,
+    height: '22%',
+    marginRight: 4,
+    marginLeft: 10,
   },
   title: {
     fontSize: 30,
     fontWeight: 'bold',
-    marginLeft: 4,
-    marginVertical: 4
   },
   price: {
     color: '#000000',
     fontSize: 25,
-    marginRight: 4,
-    marginTop: 20
+  },
+  description: {
+    fontSize: 17,
+    width: '50%',
+    height: '85%',
+    paddingLeft: 10,
   },
   actions: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     height: '25%',
-    paddingHorizontal: 20
+    paddingHorizontal: 10
   }
 });
 

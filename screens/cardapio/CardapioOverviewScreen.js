@@ -16,7 +16,7 @@ const CardapioOverviewScreen = props => {
        title = {item.title}
        image={item.imageURl} 
        price = {item.price}
-       sizeBurguer = {item.sizeOfBurguer}
+       description = {item.description}
        onViewDetail = {() => {}}
        />
       )}
