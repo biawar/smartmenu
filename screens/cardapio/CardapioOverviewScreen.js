@@ -1,7 +1,8 @@
 import React from 'react';
 import { FlatList, Text } from 'react-native';
 import { useSelector } from 'react-redux';
-import BURGUERS from '../../data/dummy-data';
+import BurguerItem from "../../components/shop/BurguerItem";
+
 
 const CardapioOverviewScreen = props => {
   const burguers = useSelector(state => state.burguer.availableBurguers);
@@ -11,9 +12,13 @@ const CardapioOverviewScreen = props => {
       keyExtractor={itemData => itemData.id}
       renderItem={
         ({item}) => (
-       <Text>
-          {item.title}
-       </Text>
+       <BurguerItem 
+       title = {item.title}
+       image={item.imageURl} 
+       price = {item.price}
+       sizeBurguer = {item.sizeOfBurguer}
+       onViewDetail = {() => {}}
+       />
       )}
     />
   );

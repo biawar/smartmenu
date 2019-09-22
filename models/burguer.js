@@ -1,12 +1,12 @@
 class Burguer {
-  constructor(id, ownerId, title, imageURl, description, priceSmaller, biggerBurguer) {
+  constructor(id, ownerId, title, imageURl, description, price, sizeOfBurguer) {
       this.id = id;
       this.ownerId = ownerId;
       this.title = title;
       this.imageURl = imageURl;
       this.description = description;
-      this.price = priceSmaller;
-      this.sizeOfBurguer = biggerBurguer;
+      this.price = price;
+      this.sizeOfBurguer = sizeOfBurguer;
   }
 }
 
